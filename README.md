@@ -8,7 +8,7 @@ Range test server and Atmega client work in a similar way with the server taking
 
 The sensor module transmitter samples the ATMEGA ADC and then transmits a message every 15 minutes, going into power down mode in between. The stability test server listens for these messages and records the sensor data along with rssi and timestamp before sending an ack.
 
-The mesh script is used to create a routing table between multiple ATMEGA nodes with different IDs.
+The mesh script is used to create a routing table between multiple ATMEGA nodes with different IDs. This is based off of this article: https://nootropicdesign.com/projectlab/2018/10/20/lora-mesh-networking/
 
 The Time Test scripts are used to time the duration of messages sent and received. 
 
